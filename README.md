@@ -2,6 +2,21 @@
 
 A Claude skill for reading, analyzing, and building Canvas LMS course files (`.imscc` format). Works with any Canvas course export, regardless of institution or discipline.
 
+## Download and install
+
+**Step 1 — Download the skill file**
+
+[⬇️ Download canvas-imscc.skill](https://github.com/brockcraft/canvas-imscc/raw/main/canvas-imscc.skill)
+
+Click the link above. Your browser will download a file called `canvas-imscc.skill` — probably to your Downloads folder. That's the only file you need.
+
+**Step 2 — Install it in Claude**
+
+- **Cowork or Claude Desktop:** Go to Settings → Skills → Install from file, then select the `canvas-imscc.skill` file you just downloaded.
+- **Claude Code:** In your terminal, run `claude skills install ~/Downloads/canvas-imscc.skill`
+
+That's it. No cloning, no terminal commands (unless you're using Claude Code), no setup.
+
 ## What it does
 
 This skill gives Claude deep knowledge of the IMS Common Cartridge v1.1 format as Canvas implements it, covering two workflows:
@@ -25,20 +40,8 @@ Canvas IMSCC files have a number of non-obvious requirements that cause silent "
 
 ## Requirements
 
-- Claude (any interface that supports skills: Claude Code, Cowork, or compatible Claude Desktop configurations)
-- Python 3 available in the execution environment (for extraction scripts and IMSCC build scripts)
-
-## Installation
-
-### Claude Code
-
-```bash
-claude skills install canvas-imscc.skill
-```
-
-### Cowork / Claude Desktop
-
-Open Settings → Skills → Install from file, and select `canvas-imscc.skill`.
+- Claude (Cowork, Claude Desktop with skills support, or Claude Code)
+- Python 3 in your environment (used when Claude writes extraction or build scripts for you)
 
 ## Usage
 
